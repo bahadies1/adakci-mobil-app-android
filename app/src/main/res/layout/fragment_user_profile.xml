@@ -1,0 +1,360 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/frameLayout2"
+    android:layout_width="match_parent"
+    android:background="#EDEDED"
+    android:layout_height="match_parent"
+    tools:context=".ui.profile.ProfileFragment">
+
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView21"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginBottom="5dp"
+                android:fontFamily="@font/madamegular"
+                android:text="Hesap Detayları"
+                android:textColor="@color/tema"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="5dp"
+                android:background="@drawable/reback2"
+                android:elevation="3dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView23"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:layout_gravity="center"
+                    android:layout_margin="5dp"
+                    android:layout_weight="2"
+                    android:drawableLeft="@drawable/user"
+                    android:gravity="center|start"
+                    android:text="\tKişisel Bilgilerim"
+                    android:textColor="@color/black"
+                    app:drawableLeftCompat="@drawable/user2" />
+
+                <ImageView
+                    android:id="@+id/imageView14"
+                    android:layout_width="24dp"
+                    android:layout_height="25dp"
+                    android:layout_margin="5dp"
+                    android:src="@drawable/right" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="5dp"
+                android:background="@drawable/reback2"
+                android:drawableLeft="@drawable/ic_home_black_24dp"
+                android:elevation="3dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView255"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/robotoregular"
+                    android:layout_margin="5dp"
+                    android:layout_weight="2"
+                    android:drawableLeft="@drawable/ic_home_black_24dp"
+                    android:gravity="center|start"
+                    android:text="\tAdreslerim"
+                    android:textColor="@color/black" />
+
+                <ImageView
+                    android:id="@+id/imageView1566"
+                    android:layout_width="24dp"
+                    android:layout_height="25dp"
+                    android:layout_margin="5dp"
+                    android:src="@drawable/right" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_margin="5dp"
+                android:background="@drawable/reback2"
+                android:drawableLeft="@drawable/ic_home_black_24dp"
+                android:elevation="3dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView25"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:layout_gravity="center"
+                    android:layout_margin="5dp"
+                    android:layout_weight="2"
+                    android:drawableLeft="@drawable/settings"
+                    android:fontFamily="@font/robotoregular"
+                    android:gravity="center|start"
+                    android:text="\tHesap Ayarları"
+                    android:textColor="@color/black" />
+
+                <ImageView
+                    android:id="@+id/imageView16"
+                    android:layout_width="24dp"
+                    android:layout_height="25dp"
+                    android:layout_margin="5dp"
+                    android:src="@drawable/right" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/textView24"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginBottom="5dp"
+                android:fontFamily="@font/madamegular"
+                android:text="Güvenlik"
+                android:textColor="@color/tema"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="5dp"
+                android:background="@drawable/reback2"
+                android:drawableLeft="@drawable/ic_home_black_24dp"
+                android:elevation="3dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView22"
+                    android:layout_width="match_parent"
+                    android:fontFamily="@font/robotoregular"
+                    android:layout_height="35dp"
+                    android:layout_gravity="center"
+                    android:layout_margin="5dp"
+                    android:layout_weight="2"
+                    android:drawableLeft="@drawable/password"
+                    android:gravity="center|start"
+                    android:text="\tŞifremi Değiştir"
+                    android:textColor="@color/black" />
+
+                <ImageView
+                    android:id="@+id/imageView10"
+                    android:layout_width="24dp"
+                    android:layout_height="25dp"
+                    android:layout_margin="5dp"
+                    android:src="@drawable/right" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/textView26"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginBottom="5dp"
+                android:fontFamily="@font/madamegular"
+                android:text="Bildirimler"
+                android:textColor="@color/tema"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="5dp"
+                android:background="@drawable/reback2"
+                android:drawableLeft="@drawable/ic_notifications_black_24dp"
+                android:elevation="3dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView27"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/robotoregular"
+
+                    android:layout_margin="5dp"
+                    android:layout_weight="2"
+                    android:drawableLeft="@drawable/ic_notifications_black_24dp"
+                    android:gravity="center|start"
+                    android:text="\tBilidrim Ayarları"
+                    android:textColor="@color/black" />
+
+                <ImageView
+                    android:id="@+id/imageView18"
+                    android:layout_width="24dp"
+                    android:layout_height="25dp"
+                    android:layout_margin="5dp"
+                    android:src="@drawable/right" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/textView28"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginBottom="5dp"
+                android:fontFamily="@font/madamegular"
+                android:text="İletişim"
+                android:textColor="@color/tema"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="5dp"
+                android:background="@drawable/reback2"
+                android:drawableLeft="@drawable/ic_home_black_24dp"
+                android:elevation="3dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView127"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:layout_gravity="center"
+                    android:layout_margin="5dp"
+                    android:layout_weight="2"
+                    android:fontFamily="@font/robotoregular"
+
+                    android:drawableLeft="@drawable/whatsapp"
+                    android:gravity="center|start"
+                    android:text="\tWhatsapp Destek Hattı"
+                    android:textColor="@color/black" />
+
+                <ImageView
+                    android:id="@+id/imageView128"
+                    android:layout_width="24dp"
+                    android:layout_height="25dp"
+                    android:layout_margin="5dp"
+                    android:src="@drawable/right" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="5dp"
+                android:background="@drawable/reback2"
+                android:drawableLeft="@drawable/ic_home_black_24dp"
+                android:elevation="3dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView272"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:layout_gravity="center"
+                    android:layout_margin="5dp"
+                    android:layout_weight="2"
+                    android:fontFamily="@font/robotoregular"
+
+                    android:drawableLeft="@drawable/info"
+                    android:gravity="center|start"
+                    android:text="\tHakkımızda"
+                    android:textColor="@color/black" />
+
+                <ImageView
+                    android:id="@+id/imageView122"
+                    android:layout_width="24dp"
+                    android:layout_height="25dp"
+                    android:layout_margin="5dp"
+                    android:src="@drawable/right" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/textView29"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginBottom="5dp"
+                android:fontFamily="@font/madamegular"
+                android:text="Oturum"
+                android:textColor="@color/tema"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:id="@+id/btnCikisYap"
+                android:layout_marginRight="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="8dp"
+                android:background="@drawable/reback2"
+                android:drawableLeft="@drawable/ic_home_black_24dp"
+                android:elevation="3dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView2472"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:layout_gravity="center"
+                    android:layout_margin="5dp"
+                    android:layout_weight="2"
+                    android:drawableLeft="@drawable/signout"
+                    android:gravity="center|start"
+                    android:fontFamily="@font/robotoregular"
+
+                    android:text="\t Oturumu Kapat"
+                    android:textColor="@color/black" />
+
+                <ImageView
+                    android:id="@+id/imageView1252"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_margin="5dp"
+                    android:src="@drawable/right" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

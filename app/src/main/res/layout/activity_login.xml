@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ededed"
+    tools:context=".login.LoginActivity">
+
+    <ScrollView
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginBottom="30dp"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_margin="16dp"
+                android:id="@+id/imageView12"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/adakci_icon" />
+
+            <EditText
+                android:id="@+id/txtLoginName"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_margin="5dp"
+                android:textColor="@color/black"
+                android:background="@drawable/login_txt_back"
+                android:textColorHint="@color/teal_700"
+                android:fontFamily="@font/rubik"
+                android:hint=" E-posta"
+                android:inputType="textPersonName" />
+
+            <EditText
+                android:id="@+id/txtLoginPassword"
+                android:background="@drawable/login_txt_back"
+                android:textColorHint="@color/teal_700"
+                android:textColor="@color/black"
+                android:layout_width="match_parent"
+                android:fontFamily="@font/rubik"
+                android:layout_height="40dp"
+                android:layout_margin="5dp"
+                android:hint=" Şifre"
+                android:inputType="textPassword" />
+
+            <Button
+                android:id="@+id/btnLogin"
+                android:layout_marginTop="16dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:textColor="@color/white"
+                android:fontFamily="@font/rubik"
+                android:backgroundTint="@color/tema"
+                android:text="giris yap" />
+
+
+            <TextView
+                android:id="@+id/textView8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:textSize="16sp"
+                android:fontFamily="@font/rubik"
+                android:text="Şifremi Unuttum"
+                android:textColor="@color/teal_700" />
+
+            <TextView
+                android:id="@+id/txtRegister"
+                android:layout_marginTop="16dp"
+                android:textSize="16sp"
+                android:fontFamily="@font/rubik"
+                android:textColor="@color/blue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Hesabın yok mu? Kayıt ol." />
+
+            <TextView
+                android:id="@+id/textView11"
+                android:gravity="center"
+                android:layout_margin="8dp"
+                android:textSize="16sp"
+                android:textColor="@color/teal_700"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ya da" />
+
+            <com.google.android.gms.common.SignInButton
+                android:id="@+id/btnGoogleSignin"
+                android:layout_margin="8dp"
+                app:colorScheme="dark"
+                android:src="@mipmap/btn_google_dark_focus_xxhdpi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+
+                android:layout_gravity="end"
+                android:id="@+id/txtGuestLogin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50dp"
+                android:layout_marginBottom="8dp"
+                android:fontFamily="@font/rubik"
+                android:text="Kayıt olmadan devam et."
+                android:textColor="@color/blue"
+                android:textSize="16sp" />
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

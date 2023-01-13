@@ -1,0 +1,11 @@
+<resources>
+
+    <string name="app_name">Adakçı</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="default_web_client_id2">"552630718751-a4e76d9n9mjrp8ckuje79sajjp4oobl1.apps.googleusercontent.com"</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+</resources>
